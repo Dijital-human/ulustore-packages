@@ -1,0 +1,17 @@
+{
+  "name": "@ulustore/utils",
+  "version": "1.0.0",
+  "description": "ulustore.com üçün utility funksiyalar / Utility functions for ulustore.com",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0"
+  },
+  "keywords": ["ulustore", "utils", "utilities"],
+  "author": "ulustore.com",
+  "license": "UNLICENSED"
+}

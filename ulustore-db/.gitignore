@@ -1,0 +1,35 @@
+# ==========================================
+# @ulustore/db - Git Ignore
+# ==========================================
+
+# Environment variables / Mühit dəyişənləri
+.env
+.env.local
+.env.development
+.env.production
+.env.*.local
+!.env.example
+
+# Dependencies / Asılılıqlar
+node_modules/
+
+# Build output / Build çıxışı
+dist/
+
+# Prisma
+prisma/dev.db
+prisma/dev.db-journal
+*.db
+*.sqlite
+
+# Logs / Log faylları
+*.log
+npm-debug.log*
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

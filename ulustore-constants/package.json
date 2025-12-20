@@ -1,0 +1,17 @@
+{
+  "name": "@ulustore/constants",
+  "version": "1.0.0",
+  "description": "ulustore.com üçün sabit dəyərlər / Constants for ulustore.com",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0"
+  },
+  "keywords": ["ulustore", "constants"],
+  "author": "ulustore.com",
+  "license": "UNLICENSED"
+}

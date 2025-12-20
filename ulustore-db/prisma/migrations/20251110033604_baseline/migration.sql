@@ -1,0 +1,4 @@
+-- Baseline migration
+-- This migration represents the current state of the database
+-- All existing tables and enums are already present in the database
+-- No changes needed - this is just a baseline marker

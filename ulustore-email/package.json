@@ -1,0 +1,17 @@
+{
+  "name": "@ulustore/email",
+  "version": "1.0.0",
+  "description": "ulustore.com üçün email şablonları / Email templates for ulustore.com",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0"
+  },
+  "keywords": ["ulustore", "email", "templates"],
+  "author": "ulustore.com",
+  "license": "UNLICENSED"
+}
