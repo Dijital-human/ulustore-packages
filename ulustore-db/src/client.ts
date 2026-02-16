@@ -7,7 +7,7 @@
  * @module @ulustore/db/client
  */
 
-import { PrismaClient } from '@prisma/client';
+import { PrismaClient } from './generated/prisma';
 
 /**
  * Type for global Prisma storage
@@ -59,11 +59,12 @@ export function getPrismaClient(options?: PrismaClientOptions): PrismaClient {
       ? ['query', 'error', 'warn']
       : ['error'];
 
-  // Create new Prisma client
-  // Yeni Prisma client yarat
+  // Create new Prisma client - Prisma 6.x engine requires enableTracing field
+  // Yeni Prisma client yarat - Prisma 6.x engine enableTracing sahəsi tələb edir
   const client = new PrismaClient({
     log: options?.log || defaultLog,
-  });
+    enableTracing: false,
+  } as ConstructorParameters<typeof PrismaClient>[0]);
 
   // Store in global for development to prevent multiple instances
   // Development-də çoxlu instance-ın qarşısını almaq üçün global-da saxla
