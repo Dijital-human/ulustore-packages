@@ -7,7 +7,7 @@
  * @module @ulustore/db/client
  */
 
-import { PrismaClient } from './generated/prisma';
+import { PrismaClient } from "@prisma/client";
 
 /**
  * Type for global Prisma storage
